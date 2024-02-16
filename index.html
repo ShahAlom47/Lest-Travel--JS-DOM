@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main class=" max-width m-auto border-cm">
+        <div class="banner  ">
+            <div class="hero  bg-base-200">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <img src="images/Rectangle 1.png"
+                        class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-5xl font-bold">Lets Travel</h1>
+                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                      <h1 class=" font-semibold text-3xl "> Total Budget: <span id="budget">800</span> $ </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="flex gap-3">
+
+            <div id="card-container" class="flex-1 grid gap-2 grid-cols-2">
+
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure>
+                    <div class="card-body">
+                      <h2 id="" class="card-title">Moulvuibazar</h2>
+                      <p>Cost: <span >300</span>$</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn btn-primary">Add To Card</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure>
+                    <div class="card-body">
+                      <h2 id="" class="card-title">Kamalgonj</h2>
+                      <p>Cost: <span >400</span>$</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn btn-primary">Add To Card</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure>
+                    <div class="card-body">
+                      <h2 id="" class="card-title">Hamham</h2>
+                      <p>Cost: <span >300</span>$</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn btn-primary">Add To Card</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure>
+                    <div class="card-body">
+                      <h2 id="" class="card-title">LauwaChora</h2>
+                      <p>Cost: <span >300</span>$</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn btn-primary">Add To Card</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure>
+                    <div class="card-body">
+                      <h2 id="" class="card-title">Jaflong</h2>
+                      <p>Cost: <span >300</span>$</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn btn-primary">Add To Card</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure>
+                    <div class="card-body">
+                      <h2 id="" class="card-title">Sundorban</h2>
+                      <p>Cost: <span >300</span>$</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn btn-primary">Add To Card</button>
+                      </div>
+                    </div>
+                  </div>
+               
+            </div>
+
+
+
+            <div id="calculation-container" class="w-4/12 text-center">
+
+                <h1 class="text-3xl">Your Card</h1>
+                <hr>
+                <div id="card-store" class="p-3 text-left font-semibold text-lg   ">
+
+                </div>
+                <hr>
+                <div id="total-cost-cotainer">
+                    <h1 id="total-cost" class="text-3xl">Total: <span id="total-cost-value"></span> $</h1>
+                    <div class="cost-btn-container flex gap-2 m-7">
+                        <button class="btn   btn-primary text-white font-semibold">Bus +<span id="bus" class="bus">200</span></button>
+                        <button class="btn  btn-primary text-white font-semibold">Train  -<span class="train">100</span></button>
+                        <button class="btn  btn-primary text-white font-semibold">Flight +<span id="flight" class="flight">500</span></button>
+                    </div>
+                    <hr>
+
+                    <h1 id="grand-total-cost" class="text-3xl"> Grand Total: <span id="grand-total-value">0</span> $</h1>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+<script src="utility.js"></script>
+<script src="index.js"></script>
+</body>
+
+</html>
